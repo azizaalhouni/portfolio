@@ -1,0 +1,13 @@
+
+  img {
+  max-width: 100%;
+  border-radius:30px;
+}
+img .myImg{
+  border-radius:60px;
+
+}
+nav{
+  width:auto;
+  height:auto;
+}
