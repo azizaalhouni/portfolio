@@ -1,4 +1,6 @@
-
+.template {
+  display: none;
+}
 .myImg{
   width:100px;
   height:60px;
@@ -10,7 +12,11 @@
   padding: 0 0 .2em 1em;
 }
 .main-nav {
-  padding: 0.1em;
+  padding: 2em;
+  padding-bottom:9em;
+}
+.main-nav a{
+  color:white;
 }
 .icon-menu {
   font-size: 1.5em;
@@ -25,6 +31,7 @@
 }
 .main-nav:hover ul {
   display: block;
+
 }
 .main-nav li {
   margin-right: .4em;

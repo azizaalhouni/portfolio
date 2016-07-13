@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="navigation">
 <!-- <img src="http://cdn.pcwallart.com/images/apple-computer-keyboard-wallpaper-3.jpg"> -->
 <section class="heading-group-h1">
   <h1> Aziza Alhouni</h1>
@@ -28,24 +28,25 @@
       </nav>
   </header>
   <main>
-    <div id='date'></div>
-    <section class="article_body">
-      <p>Computer software, or simply software, is that part of a computer system that consists of encoded information or computer instructions, in contrast to the physical hardware from which the system is built.
-      </p>
-<img src="http://vignette2.wikia.nocookie.net/uncyclopedia/images/0/0b/Eiffel_tower-Paris.jpg/revision/latest?cb=20160217112837">
-<p>Computer software, or simply software, is that part of a computer system that consists of encoded information or computer instructions, in contrast to the physical hardware from which the system is built.
-The term "software" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957. In computer science and software engineering, computer software is all information processed by computer systems, programs and data.
-</p>
-<p>
-  Computer software, or simply software, is that part of a computer system that consists of encoded information or computer instructions, in contrast to the physical hardware from which the system is built.
-<img src="http://vignette2.wikia.nocookie.net/uncyclopedia/images/0/0b/Eiffel_tower-Paris.jpg/revision/latest?cb=20160217112837">
-  The term "software" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957. In computer science and software engineering, computer software is all information processed by computer systems, programs and data.</p>
-    </section>
-
+    <section id="articles">
+      <article class="template" data-category="cat">
+        <header>
+          <h1>Title</h1>
+          <div class="byline">
+            By<address><a href="">Author Name </a></address>
+            published<time pubdate datetime="2000-01-01">publish Time</time>
+          </div>
+        </header>
+        <section class="article-body"></section>
+        <article>
+          <hr>
+        </section>
   </main>
   <footer>
   </footer>
-  <script src="js/blog.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script src="js/blogArticle.js"></script>
+  <script src="js/article.js"></script>
 </body>
 
 </html>

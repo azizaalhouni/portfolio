@@ -9,5 +9,9 @@ img .myImg{
 }
 nav{
   width:auto;
-  height:auto;
+  margin-bottom: 30px;
+  color:white;
+}
+body{
+  margin: 15px 15px;
 }

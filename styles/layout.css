@@ -1,11 +1,15 @@
 
 header{
-  /*background-image:url("http://cdn.pcwallart.com/images/apple-computer-keyboard-wallpaper-3.jpg");*/
-  height:150px;
+  height:auto;
   margin: 30px 30px;
-  /*width:960px;*/
 }
-
+.navigation{
+  background-color: black;
+  color: white;
+}
+div ul li{
+  color:white;
+}
 
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
