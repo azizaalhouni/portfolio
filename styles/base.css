@@ -1,0 +1,17 @@
+
+  img {
+  max-width: 100%;
+  border-radius:30px;
+}
+img .myImg{
+  border-radius:60px;
+
+}
+nav{
+  width:auto;
+  margin-bottom: 30px;
+  color:white;
+}
+body{
+  margin: 15px 15px;
+}
