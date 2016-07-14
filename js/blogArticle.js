@@ -9,11 +9,11 @@ var myLocalData = [
   },
   {
     title: 'Web Devolper',
-    category:'softwareDevolper',
+    category:'Design Devolper',
     author:'Aziza Salah Alhouni',
     authorUrl:'http://www.gitHub.com',
     publishedOn:'2016-07-05',
-    body:'<p>The term "software" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957. In computer science and software engineering, computer software is </p><p><img src="https://pixabay.com/static/uploads/photo/2013/07/12/14/11/workstation-147953_960_720.png" class="pull-right" >all information processed by computer systems, programs and data.</p>'
+    body:'<p>The term "software" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957. In computer science and software engineering, computer software is </p><p><img src="https://pixabay.com/static/uploads/photo/2013/07/12/14/11/workstation-147953_960_720.png" class="pull-right" >all information processed by computer systems, programs and data. The term "software" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957.<a  In computer science and software engineering, computer software is The term "software" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957. In computer science and software engineering, computer software is</p>'
   },
   {
     title: 'computer science',

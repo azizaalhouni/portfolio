@@ -27,3 +27,9 @@
 .icon-menu:before {
     content: "\e9bd";
 }
+.icon-home:before {
+  content: "\e901";
+}
+.contact:before {
+    content: "\e972";
+}

@@ -11,3 +11,9 @@ As a visitor, I want the primary nav to be responsive with a menu, so that I can
 
 As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it, and abstract out the details for individual projects.
 As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings swiftly.
+
+##Day 3
+
+- As a reader, I want to click the "Read On" button so that I can see the entire article.
+- As an author, I want my articles filtered by name so that readers can find all my posts.
+- As the creator, I want the About nav to act as a tab, so my story is revealed FAST.
