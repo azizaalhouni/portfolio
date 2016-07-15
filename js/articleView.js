@@ -4,11 +4,14 @@ var articleView = {};
 //function to upload the infor on the selector
 articleView.populatedFilters = function() {
   $('article').not('.template').each(function(){
-    //author Name
     var authorName, category, optionTag;
+    //author Name
     authorName = $(this).find('address a').text();
-    optionTag = '<option value = "' + authorName + '">'+authorName +'</option>';
-    $('#author-filter').append(optionTag);
+    optionTag = '<option value = "' + authorName + '">'+authorName+'</option>';
+    console.log(authorName);
+    if($('#author-filter option[value ="'+ authorName +'"]').length === 0) {
+      $('#author-filter').append(optionTag);
+    }
     //category
     category = $(this).attr('data-category');
     optionTag = '<option value = "' + category + '">'+category+'</option>';
@@ -23,9 +26,10 @@ articleView.handleAuthorFilter = function(){
     if($(this).val()) {
       $('article').hide();
       $('article[data-author="'+$(this).val()+'"]').fadeIn();
+      console.log($(this).val());
     } else {
       $('article').fadeIn();
-      $('.template').hide();
+      $('article-template').hide();
     }
     $('#category-filter').val('');
   });
@@ -38,7 +42,7 @@ articleView.handleCategoryFilter = function () {
       $('article[data-category="'+$(this).val()+'"]').fadeIn();
     } else {
       $('article').fadeIn();
-      $('.template').hide();
+      $('article-template').hide();
     }
     $('#author-filter').val('');
   });
@@ -52,6 +56,25 @@ articleView.handleMainNav = function() {
   });
   $('.main-nav .tab:first').click();
 };
+//To show a little bit from the article
+articleView.setTeasers = function(){
+  var $readOn = $('.article-body *:nth-of-type(n+2)');
+  $readOn.hide();
+  $(document).on('click','.read-on',function(event){
+    event.preventDefault();
+    var $show = $(this).prev().children();
+    $show.fadeIn();
+    $(this).text('show less');
+    $(this).removeClass('read-on').addClass('show-less');
+  });
+  $(document).on('click','.show-less',function(event){
+    event.preventDefault();
+    $readOn.hide();
+    $(this).text('Read More');
+    $(this).removeClass('show-less').addClass('read-on');
+  });
+};
+articleView.setTeasers();
 articleView.populatedFilters();
 articleView.handleCategoryFilter();
 articleView.handleAuthorFilter();
