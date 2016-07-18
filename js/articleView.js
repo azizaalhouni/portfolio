@@ -2,6 +2,25 @@
 
 var articleView = {};
 //function to upload the infor on the selector
+// articleView.populateFilters = function() {
+//   $('article').each(function() {
+//     // populate the author filter
+//     var authorData = $(this).data('author');
+//     var authorFilterSource = $('#author-template').html();
+//     var authorFilterTemplate = Handlebars.compile(authorFilterSource);
+//     var authorOptionHtml = authorFilterTemplate({author:authorData});
+//     $('#author-filter').append(authorOptionHtml);
+//
+//     // populate the category filter
+//     var categoryData = $(this).data('category');
+//     var categoryFilterSource = $('#category-template').html();
+//     var categoryFilterTemplate = Handlebars.compile(categoryFilterSource);
+//     var categoryOptionHtml = categoryFilterTemplate({category:categoryData});
+//     if ($('#category-filter option[value="' + categoryData + '"]').length === 0) {
+//       $('#category-filter').append(categoryOptionHtml);
+//     }
+//   });
+// };
 articleView.populatedFilters = function() {
   $('article').not('.template').each(function(){
     var authorName, category, optionTag;
@@ -74,8 +93,10 @@ articleView.setTeasers = function(){
     $(this).removeClass('show-less').addClass('read-on');
   });
 };
-articleView.setTeasers();
+// articleView.render();
+// articleView.populateFilters();
 articleView.populatedFilters();
 articleView.handleCategoryFilter();
 articleView.handleAuthorFilter();
 articleView.handleMainNav();
+articleView.setTeasers();

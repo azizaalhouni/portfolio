@@ -14,6 +14,7 @@
 .main-nav {
   padding: 2em;
   padding-bottom:9em;
+  text-align: center;
 }
 .main-nav a{
   color:white;
@@ -43,7 +44,10 @@
   .icon-menu {
     display: none;
   }
-
+body{
+  width:960px;
+  margin:30px 0px;
+}
   header {
     position: relative;
   }
@@ -56,6 +60,8 @@
     padding: 0;
     list-style: none;
     clear: both;
+    margin-top: 166px;
+    Text-decoration: none;
   }
   .main-nav ul li {
     display: inline-block;
