@@ -21,24 +21,6 @@ var articleView = {};
 //     }
 //   });
 // };
-articleView.populatedFilters = function() {
-  $('article').not('.template').each(function(){
-    var authorName, category, optionTag;
-    //author Name
-    authorName = $(this).find('address a').text();
-    optionTag = '<option value = "' + authorName + '">'+authorName+'</option>';
-    console.log(authorName);
-    if($('#author-filter option[value ="'+ authorName +'"]').length === 0) {
-      $('#author-filter').append(optionTag);
-    }
-    //category
-    category = $(this).attr('data-category');
-    optionTag = '<option value = "' + category + '">'+category+'</option>';
-    if($('#category-filter option[value ="'+ category +'"]').length === 0) {
-      $('#category-filter').append(optionTag);
-    }
-  });
-};
 //function to Filter Author Name
 articleView.handleAuthorFilter = function(){
   $('#author-filter').on('change',function(){
@@ -88,15 +70,31 @@ articleView.setTeasers = function(){
   });
   $(document).on('click','.show-less',function(event){
     event.preventDefault();
-    $readOn.hide();
+    var $article = $(this).parent();
+    $article.find('p').hide();
+    $article.find('p:nth-of-type(2)').show();
     $(this).text('Read More');
     $(this).removeClass('show-less').addClass('read-on');
   });
 };
+  //Local Storage
+articleView.renderIndexPage = function(){
+  Article.all.forEach(function(a){
+    $('#articles').append(a.toHtml('#article-template'));
+    if($('#category-filter option:contains("'+ a.category + '")').length ===0){
+      $('#category-filter').append(a.toHtml('#category-filter-template'));
+    }
+    if($('#author-filter option:contains("'+a.author +'")').length === 0) {
+      $('#author-filter').append(a.toHtml('#author-filter-template'));
+    }
+  });
 // articleView.render();
 // articleView.populateFilters();
-articleView.populatedFilters();
-articleView.handleCategoryFilter();
-articleView.handleAuthorFilter();
-articleView.handleMainNav();
-articleView.setTeasers();
+  // articleView.populatedFilters();
+  articleView.handleCategoryFilter();
+  articleView.handleAuthorFilter();
+  articleView.handleMainNav();
+  articleView.setTeasers();
+};
+//local Storage
+Article.fetchAll();

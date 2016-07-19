@@ -22,3 +22,39 @@ we change the template to handlebarsjs to make it more cleaner
 We change the pervious code with next code
 var source = $('#article-template').html();
 var template = Handlebars.compile(source);
+
+**using JSON
+// myLocalData.sort(function(curElem, nextElem){
+//   return (new Date(nextElem.publishedOn)) - (new Date(curElem.publishedOn));
+// });
+// myLocalData.forEach(function(element){
+//   articles.push(new Article(element));
+// });
+// articles.forEach(function(curElem){
+//   $('#articles').append(curElem.toHtml());
+// });
+function Article(opts){
+  // this.title = opts.title;
+  // this.category = opts.category;
+  // this.author = opts.author;
+  // this.authorUrl = opts.authorUrl;
+  // this.publishedOn = opts.publishedOn;
+  // this.body = opts.body;
+  / articleView.populatedFilters = function() {
+  //   $('article').not('.template').each(function(){
+  //     var authorName, category, optionTag;
+  //     //author Name
+  //     authorName = $(this).find('address a').text();
+  //     optionTag = '<option value = "' + authorName + '">'+authorName+'</option>';
+  //     console.log(authorName);
+  //     if($('#author-filter option[value ="'+ authorName +'"]').length === 0) {
+  //       $('#author-filter').append(optionTag);
+  //     }
+  //     //category
+  //     category = $(this).attr('data-category');
+  //     optionTag = '<option value = "' + category + '">'+category+'</option>';
+  //     if($('#category-filter option[value ="'+ category +'"]').length === 0) {
+  //       $('#category-filter').append(optionTag);
+  //     }
+  //   });
+  // };
