@@ -28,8 +28,17 @@
     content: "\e9bd";
 }
 .icon-home:before {
-  content: "\e901";
+  content: "\e908";
 }
 .contact:before {
     content: "\e972";
+}
+.icon-rocket:before{
+  content: "\e923";
+}
+.icon-users:before{
+  content: "\e942";
+}
+.icon-github:before{
+  content: "\eab0";
 }
