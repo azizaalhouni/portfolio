@@ -24,3 +24,18 @@ As a developer, I want my CSS organized (think SMACSS) so that I can find my sty
 3- s a visitor, I want the site to use great typography, so that I have an enjoyable reading experience.
 - Set up your h1, h2, h3 elements according to a type scale.
 - Include some good fonts, that work well together.
+
+##Day 6
+-As a developer, I want to store my project data in a .json file, so that I can keep it organized.
+- As a developer, I want to retrieve that source data file asynchronously, so that my app logic gets the data just when I need it.
+
+##Day 7
+- Eliminate all for loops.
+
+- Use map where you are transforming one collection into another.
+
+- In at least one place, enclose the contents of a script file in an IIFE, that exports your high-level objects.
+
+- Refactor any parts of your app that could be more loosely coupled. Make smaller functions that can accept and expect the return values of other functions!
+
+- Think of a useful way to use reduce. Maybe you want to put some "fun facts stats" in your footer?
