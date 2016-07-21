@@ -23,6 +23,48 @@ We change the pervious code with next code
 var source = $('#article-template').html();
 var template = Handlebars.compile(source);
 
+***pupleate
+//function to upload the infor on the selector
+// articleView.populateFilters = function() {
+//   $('article').each(function() {
+//     // populate the author filter
+//     var authorData = $(this).data('author');
+//     var authorFilterSource = $('#author-template').html();
+//     var authorFilterTemplate = Handlebars.compile(authorFilterSource);
+//     var authorOptionHtml = authorFilterTemplate({author:authorData});
+//     $('#author-filter').append(authorOptionHtml);
+//
+//     // populate the category filter
+//     var categoryData = $(this).data('category');
+//     var categoryFilterSource = $('#category-template').html();
+//     var categoryFilterTemplate = Handlebars.compile(categoryFilterSource);
+//     var categoryOptionHtml = categoryFilterTemplate({category:categoryData});
+//     if ($('#category-filter option[value="' + categoryData + '"]').length === 0) {
+//       $('#category-filter').append(categoryOptionHtml);
+//     }
+//   });
+// };
+// articleView.populatedFilters = function() {
+//   $('article').not('.template').each(function(){
+//     var authorName, category, optionTag;
+//     //author Name
+//     authorName = $(this).find('address a').text();
+//     optionTag = '<option value = "' + authorName + '">'+authorName+'</option>';
+//     console.log(authorName);
+//     if($('#author-filter option[value ="'+ authorName +'"]').length === 0) {
+//       $('#author-filter').append(optionTag);
+//     }
+//     //category
+//     category = $(this).attr('data-category');
+//     optionTag = '<option value = "' + category + '">'+category+'</option>';
+//     if($('#category-filter option[value ="'+ category +'"]').length === 0) {
+//       $('#category-filter').append(optionTag);
+//     }
+//   });
+// };
+ in the end of article view
+ //local Storage
+ Article.fetchAll();
 **using JSON
 // myLocalData.sort(function(curElem, nextElem){
 //   return (new Date(nextElem.publishedOn)) - (new Date(curElem.publishedOn));

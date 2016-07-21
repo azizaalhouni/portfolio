@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Statistics</title>
+    <script id="author-template" type="text/x-handlebars-template">
+      <li><strong>{{name}}</strong>: {{numWords}} words written</li>
+    </script>
+  </head>
+  <body>
+    <main class="clearfix">
+      <h1>Blog Stats</h1>
+      <section id="blog-stats">
+        <dt>Total articles:</dt> <dd class="articles"></dd>
+        <dt>Total words:</dt><dd class="words"></dd>
+        <h2>Author Stats</h2>
+        <p><em>Details on who is writing , and how much writing they are doing...</em></p>
+        <ul class="author-stats">
+        </ul>
+      </section>
+      </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- Handlebars link -->
+      <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
+      <!-- <script src="js/blogArticle.js"></script> -->
+      <script src="js/article.js"></script>
+      <script src="js/articleView.js"></script>
+      <script src="js/adminPage.js"></script>
+    </body>
+  </html>
