@@ -52,8 +52,7 @@
     $(document).on('click','.show-less',function(event){
       event.preventDefault();
       var $article = $(this).parent();
-      $article.find('p').hide();
-      $article.find('p:nth-of-type(n-2)').show();
+      $article.find('p:nth-of-type(n+2)').hide();
       $(this).text('Read More');
       $(this).removeClass('show-less').addClass('read-on');
     });
@@ -61,7 +60,6 @@
     //Local Storage
   articleView.renderIndexPage = function(){
     Article.allArticles.forEach(function(a){
-      // console.log(a);
       $('#articles').append(a.toHtml('#article-template'));
       if($('#category-filter option:contains("' + a.category + '")').length === 0) {
         console.log('works');
@@ -70,11 +68,7 @@
       if($('#author-filter option:contains("' + a.author + '")').length === 0) {
         $('#author-filter').append(a.toHtml('#author-filter-template'));
       };
-      // $('#articles').append(a.toHtml($('#article-template')));
     });
-  // articleView.render();
-  // articleView.populateFilters();
-    // articleView.populatedFilters();
     articleView.handleCategoryFilter();
     articleView.handleAuthorFilter();
     articleView.handleMainNav();
