@@ -100,3 +100,20 @@ function Article(opts){
   //     }
   //   });
   // };
+
+  //
+  //     var retrieveData = JSON.parse(storeData);
+  //     Article.loadAll(retrieveData);
+  //     articleView.renderIndexPage();
+  //   } else {
+  //     $.getJSON('../data/hackerIpsum.json',function(data){
+  //       localStorage.hackerIpsum = JSON.stringify(data);
+  //       console.log('fetchAll');
+  //       Article.loadAll(data);
+  //       articleView.renderIndexPage();
+  //     }) .fail(function( jqxhr, textStatus, error ) {
+  //       var err = textStatus + ', ' + error;
+  //       console.log('Request Failed: ' + err );
+  //     });
+  //   }
+  // };

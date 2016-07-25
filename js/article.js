@@ -1,4 +1,4 @@
-// var articles = [];
+
 (function(module){
 //constructor function
   function Article(opts){
@@ -26,6 +26,8 @@
     });
   };
   //localStorage
+  /*it now accepts a parameter that will execute once
+  the loading of articles is done Now we can call whatever we pass in*/
   Article.fetchAll = function(nextFunction) {
     var storeData = localStorage.hackerIpsum;
     if(storeData) {
@@ -40,7 +42,6 @@
             Article.getAll(nextFunction);
           } else {
             Article.loadAll(JSON.parse(localStorage.hackerIpsum));
-            // articleView.renderIndexPage();
             nextFunction();
           }
         }
@@ -55,10 +56,6 @@
       Article.loadAll(responseData);
       localStorage.hackerIpsum = JSON.stringify(responseData);
       nextFunction();
-      // localStorage.eTag = xhr.getResponseHeader('ETag');
-      // localStorage.hackerIpsum = JSON.stringify(data);
-      // Article.loadAll(data);
-      // articleView.renderIndexPage();
     });
   };
   //chain together a map and a reduce call to get a rough count of all
@@ -97,21 +94,6 @@
       };
     });
   };
-  //
-  //     var retrieveData = JSON.parse(storeData);
-  //     Article.loadAll(retrieveData);
-  //     articleView.renderIndexPage();
-  //   } else {
-  //     $.getJSON('../data/hackerIpsum.json',function(data){
-  //       localStorage.hackerIpsum = JSON.stringify(data);
-  //       console.log('fetchAll');
-  //       Article.loadAll(data);
-  //       articleView.renderIndexPage();
-  //     }) .fail(function( jqxhr, textStatus, error ) {
-  //       var err = textStatus + ', ' + error;
-  //       console.log('Request Failed: ' + err );
-  //     });
-  //   }
-  // };
+
   module.Article = Article;
 })(window);

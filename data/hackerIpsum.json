@@ -14,5 +14,21 @@
   "authorUrl":"www.gitHub.com",
   "publishedOn":"2016-07-01",
   "body": "<p>The term was first proposed by Alan Turing</p><p> and used in this sense by John W. Tukey in 1957.<img src=\"http://previews.123rf.com/images/scanrail/scanrail1303/scanrail130300024/18457436-Computer-mobility-internet-communication-and-cloud-computing-concept-white-laptop-with-cloud-of-colo-Stock-Photo.jpg\"> computer science and software engineering, computer software is all information </p><p>processed by computer systems, programs and data.The term \"software\" was first proposed by Alan Turing and used in this sense by John W. Tukey in 1957.</p>"
+},
+{
+  "title": "Lushootseed",
+  "category": "Lushootseed Language",
+  "author": ["Alison Zerbe", "Aziza Houni", "Derek Hewitt", "Elizabeth Kleinschmidt"],
+  "authorUrl": "https://github.com/AlisonZ/lushootseed",
+  "publishedOn": "2016-07-01",
+  "body": "<p>Lushootseed is the language native to the Puget Sound which was originally spoken in the region that spanned from Olympia to the Skagit watershed and the Hood Canal to the Cascades.  This once thriving language was spoken by a range of tribes that inhabited the area, such as the Duwamish, Tulalip,  Snohomish and Puyallup. The wide territory encompassed by Lushootseed resulted in a Northern Dialect and a Southern Dialect, kind of like Lushootseed accents. While this difference resulted in different pronunciations of certain sounds, the languages were mutually intelligible and speakers easily communicated with each other without losing information.</p>"
+},
+{
+  "title": "Salmon Cookie",
+  "category": "webDevolper",
+  "author": "Aziza Alhouni",
+  "authorUrl": "https://github.com/azizaalhouni",
+  "publishedOn": "2016-06-26",
+  "body": "The Salmon Bay Cafe, wedged between a marina and the train tracks, makes old-school diner classics, including omelettes named after Seattle neighborhoods."
 }
 ]
