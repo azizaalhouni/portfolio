@@ -15,6 +15,9 @@ nav{
 #navigation{
   font-size: 18px;
 }
+#navigation span {
+  font-family: 'Yatra One', cursive;
+}
 .title{
   margin-top:30px;
   font-family: 'Indie Flower', cursive;
@@ -29,7 +32,7 @@ body{
   background-size: cover;
 }
 .article-body{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 h1{
   font-family: 'Oswald', sans-serif;
