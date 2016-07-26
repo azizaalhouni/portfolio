@@ -1,0 +1,23 @@
+{
+  "name": "aziza-blog",
+  "version": "1.0.0",
+  "description": "mvc ",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizaalhouni/portfolio.git"
+  },
+  "author": "azizaalhouni@yahoo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azizaalhouni/portfolio/issues"
+  },
+  "homepage": "https://github.com/azizaalhouni/portfolio#readme"
+}
