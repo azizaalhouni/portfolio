@@ -39,3 +39,7 @@ As a developer, I want my CSS organized (think SMACSS) so that I can find my sty
 - Refactor any parts of your app that could be more loosely coupled. Make smaller functions that can accept and expect the return values of other functions!
 
 - Think of a useful way to use reduce. Maybe you want to put some "fun facts stats" in your footer?
+
+##Day 11
+- Update your main nav so that each clickable item is a link to a different url,
+ that is handled by a function as indicated by page.js.
