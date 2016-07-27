@@ -35,6 +35,25 @@
     <script id="category-filter-template" type = "text/x-handlebars-template">
       <option value="{{category}}">{{category}}</option>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a><br>
+        <p>Description: {{description}}</p>
+        <p>Primary Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last Updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+        <p>{{watchers}} watching this repo</p>
+        {{/if}}
+      <br></li>
+    </script>
+    <script id="resume-template" type="text/x-handlebars-template">
+      <div>My Resume</div>
+      <ul>
+        <!-- <li>{{title}}</li> -->
+        <li></li>
+      </ul>
+    </script>
   </head>
   <body>
     <header class="navigation">
@@ -44,10 +63,12 @@
       <nav class="main-nav">
         <div class="myImg"><img src="img/aziza.jpg"></div>
         <div class="title">AZIZA SALAH ALHOUNI</div>
+        <div>●1-(425)-245-6923 ●  azizaalhouni@yahoo.com</div>
         <div class="icon-menu"></div>
         <ul>
-          <li class="tab" data-content="articles" id="navigation"><a href="#" class="icon-home"> Home</a></li>
-          <li class="tab" data-content="about" id="navigation"><a href="#" class="icon-rocket"> About</a></li>
+          <li class="tab" data-content="articles" id="navigation"><a href="/" class="icon-home"> Home</a></li>
+          <li class="tab" data-content="about" id="navigation"><a href="/about" class="icon-rocket"> About</a></li>
+          <li class="tab" data-content="cv" id="navigation"><a href="/resume" class="icon-book">Resume</a></li>
           <li><a href="#" class="icon-users" id="navigation"> Contact Me</a></li>
           <li><a href="https://github.com/azizaalhouni" class="icon-github" id="navigation"> My Github</a></li>
         </ul>
@@ -71,7 +92,7 @@
       </section>
         <section id="about" class="tab-content">
           <header> Welcome to my World</header>
-            <section>
+            <div>
               <h1>About Me:</h1><br>
               <ul>
                 <li>The joy of always learning, which springs from the nonrepeating nature of the task. While constructing the program you constantly expand your understanding of both the problem and the solution. In addition, there is almost no limit to what you can learn to improve your craft – languages, algorithms, methodology, tools, frameworks.
@@ -83,7 +104,10 @@
                 <li><a href="https://www.facebook.com/"><img src="https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_48.png"></a><a href="https://www.facebook.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAbFBMVEU8WZb///9thLXX3OiSosRFYZs7WJY4VpTU2ufR1+XM0+PHz+Dg5O1wh7dUbqbCyt1jfK98kLl1ibW8xdqDlr21wNeLnMCvutOotNChrsyZqMgzUZHq7fRof673+Ptfd6lYcaZMZ6F2jbonR4tiAko5AAAB1ElEQVRIie2WybqjIBBGCxWNYqIijgSH5P3fsYGLGgdutBe96rPjl/PhUIUAQigSEJwCBJHTAaGMD6V3ilJw2kkle3vxaepAIIjeWeyeJm7fBERQXFDcEAvAmLi3CwwYAJJbeIGHNKAIo/OQUa7iVxE5TyIVHDQk+Y3coAckx0pp5/QI4sZPjau9SiteXljJn2girtS4BqWworKRd2hRahkUjVayqraxrIGQ28ig8nyl0LqxkKNPpZVJXWrFadpjvHCleDJqWKAU0dpq3Z2fQ5KoDmkzrfReeQwzSlezkjEdeVQrgxwfkhnluUSl0MqDZcfQSVki1isFMLVwvxnlIxu14g/0vkekaW/eWJwqhAxp6quXLGt5EDtSJgvSfMlOF2SbCtGDD1oBwONjA/bQhho/5B3BpIC/hWdbhXFfT52UHXuFcriq9F8VtlXG4IsS9FVVx+a7qNZpwP+iQMD52xS/yxXTBbuibi4xyrTAf+XfKb/8jGdllWIYtp2yMBLTlau0h9dBExucqZFX6QuoYyWdlFVK/0a5X1Xu15UXlI718dNp63M+5jglhENqoy9+ThTJZzhEMO8c5+Dy2IM6yoPdNvbDNG8OAi7U4QohIvBJhCqhP3QoUep3/C/sAAAAAElFTkSuQmCC"></a>
                 <a href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjUBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3LTc3Nzc3Nzc3Ny83NzcyNzc3Nzc4Lzc3MTc3Nzc3NzU1Kzc3Nzc4NSs1N//AABEIACsAKwMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAFBgcDBAH/xAA0EAACAQMCBAIIBAcAAAAAAAABAgMEBREAEgYTITFRYQciQXGBkaHBFDRCYhUWJCUyUpL/xAAXAQADAQAAAAAAAAAAAAAAAAACAwQB/8QAIhEAAgICAQMFAAAAAAAAAAAAAQIAEQMSITFBgQQUIzJx/9oADAMBAAIRAxEAPwDvpbtNxpfayetqJhbY+YKWlRyqbFIAZgO7Hv17Z0JuNHSx1xRN6rk4Ac6w4dS5cOIzVK21WkT1VnrhHuRxkMCR1xjBGvatJ6hp7lLXWqK302DU1MdTzRFuzgAAZZun+I69RqfHv8t99a8HmVZtPcYmToFN/s7IqenC9S//AGdDrwkMFHPNFuZo42YAuepA1pbbnS3CKZ6G1VEsMa5EtbW8l5PMIqkD4k6ypIP5neWisbAVQUieguEoikRe25HAw6+zoAR7RrDgyLRMMeoxMSAYm228XdX/ABVDVtTzx4YNGxQnqOgOfodWexelu3Laadb5v/iCArMY06MQSA3xAB+OkmP0VcTUsWxKWn25Gc1qAnHnt0AreGrzTVcsNRHSiVWO4LOCM9/DTia6RAF/Yy4cMxQT2ulFRTwTbUGOZGrY92R01OfTtOsdxtNsiSOGiAeYxRoFVpMDqQPIn56oPCb/ANrp+v6Bpb9LllW600c5bZsxtmwSImHQFsddpHQ+GAdCjVMcXck1ouCwwVKtMm5kyS36vIeGjdpdHuVsu1EORURzxRlUOQ2TtbHgCD20IhsEig/iEnjOMjlRmVX81Zcg6P8AC9rqTdoIUG2SM5gpyQTGcY5suOigAnavcnGnseOYgLZoDmXo1XOt0MpOS8YJPjqR8QPm81R/f9hqmTOsNHHBHnZHGEXPgBjUpvkmbtUn9/21PtZlKio58NVgggajn9WemdoZV/1ZTg6N1bRVcBjYg5GuH0n0FLTUou9NFyq9mCPMjEbwO24dj7yNIKXavA/Mv9NCwKmaKYXCldwbTPOzRKEDHJCErn5aPcP2mks0O2FETPfaMZ0oG71+PzT/AE1i92ryD/VPrLMLWUC4XCNIj6w0mJw3er6GuduplelnduWxbGcErn5g684TjF94hgobqXnpmGWj3lQffgjVxhijp4UhgjSOKNQqIgwqgdAAPYNGidzFs2vAn//Z"></a><a href = "#"><img src="https://www.liberty.edu/media/8030/icons/linkedin_36x36.png"></a></li>
               </ul>
-            </section>
+            </div>
+        </section>
+        <section id="resume" class="tab-content">
+          <header> My Resume </header>
         </section>
     </main>
     <footer>
@@ -91,10 +115,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <!-- Handlebars link -->
     <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
+    <!-- secret GitHub token file, which should be gitingore'd, -->
+      <!-- therefore recreated in every developer's environment -->
+        <script src="js/page.js"></script>
+      <script src="js/githubToken.js"></script>
     <script src="js/article.js"></script>
+    <script src="js/models/repo.js"></script>
     <script src="js/articleView.js"></script>
+    <script src="js/views/repoView.js"></script>
     <script src="js/controllers/aboutController.js"></script>
     <script src="js/controllers/articleController.js"></script>
+    <script src="js/controllers/resumeController.js"></script>
     <script src="js/controllers/routes.js"></script>
+
   </body>
 </html>

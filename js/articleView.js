@@ -30,14 +30,14 @@
     });
   };
   //To make Tab works
-  articleView.handleMainNav = function() {
-    $('.main-nav').on('click', '.tab',function(){
-      var $id = $(this).data('content');
-      $('.tab-content').hide();
-      $('#' + $id).fadeIn();
-    });
-    $('.main-nav .tab:first').click();
-  };
+  // articleView.handleMainNav = function() {
+  //   $('.main-nav').on('click', '.tab',function(){
+  //     var $id = $(this).data('content');
+  //     $('.tab-content').hide();
+  //     $('#' + $id).fadeIn();
+  //   });
+  //   $('.main-nav .tab:first').click();
+  // };
   //To show a little bit from the article
   articleView.setTeasers = function(){
     var $readOn = $('.article-body *:nth-of-type(n+2)');
@@ -71,7 +71,7 @@
     });
     articleView.handleCategoryFilter();
     articleView.handleAuthorFilter();
-    articleView.handleMainNav();
+    // articleView.handleMaisnNav();
     articleView.setTeasers();
   };
   module.articleView = articleView;
