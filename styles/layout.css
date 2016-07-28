@@ -1,0 +1,19 @@
+
+header{
+  height:auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.navigation{
+  /*background-color: black;*/
+  color: white;
+}
+div ul li{
+  color:white;
+}
+
+@media only screen and (min-width: 640px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }

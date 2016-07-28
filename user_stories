@@ -1,0 +1,51 @@
+
+##user stories
+
+## Day One
+As a developer, I need my site to use valid and semantic markup, so that employers will love me.
+As the creator, I need the page to link to my social and GitHub pages, so that visitors can follow me, and I can build my audience.
+As a visitor, I want the viewport properly sized, so that content fits all the size I have available.
+As a visitor, I want the primary nav to be responsive with a menu, so that I can get around using any device.
+
+## Day two
+
+As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it, and abstract out the details for individual projects.
+As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings swiftly.
+
+##Day 3
+
+- As a reader, I want to click the "Read On" button so that I can see the entire article.
+- As an author, I want my articles filtered by name so that readers can find all my posts.
+- As the creator, I want the About nav to act as a tab, so my story is revealed FAST.
+
+#Day 4
+1- As a developer, I want to use Handlebars for my project template, so that I can include new projects more easily.
+2- As a developer, I want my CSS styles to follow SMACSS organization, so that I know where to look for creating and editing styles.
+3- s a visitor, I want the site to use great typography, so that I have an enjoyable reading experience.
+- Set up your h1, h2, h3 elements according to a type scale.
+- Include some good fonts, that work well together.
+
+##Day 6
+-As a developer, I want to store my project data in a .json file, so that I can keep it organized.
+- As a developer, I want to retrieve that source data file asynchronously, so that my app logic gets the data just when I need it.
+
+##Day 7
+- Eliminate all for loops.
+
+- Use map where you are transforming one collection into another.
+
+- In at least one place, enclose the contents of a script file in an IIFE, that exports your high-level objects.
+
+- Refactor any parts of your app that could be more loosely coupled. Make smaller functions that can accept and expect the return values of other functions!
+
+- Think of a useful way to use reduce. Maybe you want to put some "fun facts stats" in your footer?
+
+##Day 11
+- Update your main nav so that each clickable item is a link to a different url,
+ that is handled by a function as indicated by page.js.
+
+ ##Day12
+ - To get started, you will need to create a controller that includes a call to the Github API.
+ - This call should grab data about your individual account, and render portions of the returned content to the page,
+ once the data has been loaded. This is fairly open ended,
+ so use whatever data you deem fit and be sure to separate your concerns.
