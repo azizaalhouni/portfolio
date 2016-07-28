@@ -1,9 +1,9 @@
 //This page to reveal only the about section
 (function(module) {
   var aboutController = {};
-  aboutController.reveal = function() {
-    $('main section').hide();
-    $('#about').show();
+  aboutController.index = function() {
+    $('.tab-content').hide();
+    $('#about').fadeIn();
   };
   module.aboutController = aboutController;
 })(window);

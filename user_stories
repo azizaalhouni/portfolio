@@ -43,3 +43,9 @@ As a developer, I want my CSS organized (think SMACSS) so that I can find my sty
 ##Day 11
 - Update your main nav so that each clickable item is a link to a different url,
  that is handled by a function as indicated by page.js.
+
+ ##Day12
+ - To get started, you will need to create a controller that includes a call to the Github API.
+ - This call should grab data about your individual account, and render portions of the returned content to the page,
+ once the data has been loaded. This is fairly open ended,
+ so use whatever data you deem fit and be sure to separate your concerns.

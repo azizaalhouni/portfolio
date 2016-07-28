@@ -2,8 +2,8 @@
 (function(module) {
   var articleController = {};
 
-  articleController.reveal = function() {
-    $('main section').hide();
+  articleController.index = function() {
+    $('#about').hide();
     $('#articles').show();
   };
   module.articleController = articleController;
