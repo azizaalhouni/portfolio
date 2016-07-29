@@ -62,7 +62,6 @@
     Article.allArticles.forEach(function(a){
       $('#articles').append(a.toHtml('#article-template'));
       if($('#category-filter option:contains("' + a.category + '")').length === 0) {
-        console.log('works');
         $('#category-filter').append(a.toHtml('#category-filter-template'));
       };
       if($('#author-filter option:contains("' + a.author + '")').length === 0) {

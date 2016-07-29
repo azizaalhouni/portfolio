@@ -45,7 +45,10 @@
   }
 body{
   width:960px;
-  margin:30px 0px;
+  margin:30px auto;
+}
+main{
+  margin-left: 300px;
 }
   header {
     position: relative;

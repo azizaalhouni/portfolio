@@ -2,6 +2,10 @@
 img {
   max-width: 100%;
   border-radius:30px;
+  margin-left: 220px;
+}
+#personalPic {
+  border-radius:100%;
 }
 img .myImg{
   border-radius:60px;
@@ -18,13 +22,12 @@ nav{
 .title{
   margin-top:30px;
   font-family: 'Indie Flower', cursive;
-  /*background-image: url("http://images.freeimages.com/images/previews/fe3/swirl-1245425.jpg");*/
 }
 body{
   margin: 15px 15px;
-  /*background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdfPEXS7pZWN9Fat5Zg0FrhvzXQj98dfj-toSd5nbyV26JL5mO");*/
-  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqVwJGeUH-8Zq3eeZBm-C_ZEBsYSTAB-ZV3xX8-PIFjkdfRgJeug");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("http://wallpaperwarrior.com/wp-content/uploads/2016/05/Desktop-Backgrounds-25.jpg");
   color:wheat;
   background-size: cover;
 }
