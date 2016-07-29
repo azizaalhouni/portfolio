@@ -1,7 +1,9 @@
 // Let's build a server!
 var express = require('express'),
 //require in our request proxy module to publish on heroku
+//proxy give us an autorizition to use github so proxy will call process.env
   requestProxy = require('express-request-proxy'),
+  //process.env just define in the server
   port = process.env.PORT || 3000,
   app = express();
   //heroku Now use our proxy within a function to request
@@ -9,11 +11,11 @@ var express = require('express'),
 var proxyGitHub = function(request, response){
   console.log('Routing GitHub request for', request.params[0]);
   (
-  requestProxy({
-    url: 'http://api.github.com' + request.params[0],
-    headers: {Authorization: 'token ' + process.env.GITHUB_TOKEN }
-  })
-)(request, response);
+    requestProxy({
+      url: 'http://api.github.com' + request.params[0],
+      headers: {Authorization: 'token ' + process.env.GITHUB_TOKEN }
+    })
+  )(request, response);
 };
 app.get('/github/*', proxyGitHub);
 

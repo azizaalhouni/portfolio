@@ -1,0 +1,26 @@
+[
+  {
+  "name":"Rosario Reyes",
+  "position":"Founder and CEO",
+  "company":"Latino Educational Training Institut",
+  "address":"Lynnwood, WA 98037",
+  "email":"Rosario@lasamericasplaza.com",
+  "phoneNumber":"(206) 228-2236"
+},
+{
+  "name":"Djouher Ayouni",
+  "position":"Bilingual Case Manager",
+  "company":"Refugee & Immigrant services northwest,",
+  "address":"Lynnwood, WA 98036",
+  "email":"dayouni@everettcc.edu",
+  "phoneNumber":"(206)398-9255"
+},
+{
+  "name":"Lawrence D. Fuell, PhD",
+  "position":"Director, Global Affairs Center",
+  "company":"Faculty, Political Science, Shoreline Community College",
+  "address":"Shoreline, WA 98133",
+  "email":"lfuell@shoreline.edu",
+  "phoneNumber":"206-533-6750"
+}
+]

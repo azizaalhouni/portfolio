@@ -52,7 +52,7 @@
   };
   //call this function if you want to refresh data from the source
   Article.getAll = function(nextFunction){
-    $.getJSON('/data/hackerIpsum.json', function(responseData){
+    $.getJSON('/data/cv.json', function(responseData){
       Article.loadAll(responseData);
       localStorage.hackerIpsum = JSON.stringify(responseData);
       nextFunction();

@@ -1,7 +1,7 @@
 {
-  "name": "aziza-blog",
+  "name": "aziza",
   "version": "1.0.0",
-  "description": "mvc ",
+  "description": "personal info",
   "main": "server.js",
   "dependencies": {
     "express": "^4.14.0",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/azizaalhouni/portfolio.git"
   },
-  "author": "azizaalhouni@yahoo.com",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/azizaalhouni/portfolio/issues"

@@ -47,11 +47,35 @@
         {{/if}}
       <br></li>
     </script>
+    <!-- ******************* Resume ************************************* -->
     <script id="resume-template" type="text/x-handlebars-template">
       <div>My Resume</div>
       <ul>
-        <!-- <li>{{title}}</li> -->
-        <li></li>
+        <li>{{title}}</li>
+        <li>{{category}}</li>
+        <li>{{author}}</li>
+        <li>{{authorUrl}}</li>
+        <li>{{date}}</li>
+        <li>{{{body}}}</li>
+      </ul>
+    </script>
+    <script id="education-template" type="text/x-handlebars-template">
+      <div>My Education</div>
+      <ul>
+        <li>{{title}}</li>
+        <li>{{location}}</li>
+        <li>{{date}}</li>
+      </ul>
+    </script>
+    <script id="reference-template" type="text/x-handlebars-template">
+      <div>My References</div>
+      <ul>
+        <li>{{name}}</li>
+        <li>{{position}}</li>
+        <li>{{Company}}</li>
+        <li>{{address}}</li>
+        <li>{{email}}</li>
+        <li>{{phoneNumber}}</li>
       </ul>
     </script>
   </head>
@@ -61,7 +85,7 @@
         <h1> Aziza Alhouni</h1>
       </section> -->
       <nav class="main-nav">
-        <div class="myImg"><img src="img/aziza.jpg"></div>
+        <div class="myImg"><img id="personalPic" src="img/zozo.jpg"></div>
         <div class="title">AZIZA SALAH ALHOUNI</div>
         <div>●1-(425)-245-6923 ●  azizaalhouni@yahoo.com</div>
         <div class="icon-menu"></div>
@@ -106,8 +130,17 @@
               </ul>
             </div>
         </section>
+        <!-- ***************** Resume ****************** -->
         <section id="resume" class="tab-content">
           <header> My Resume </header>
+        </section>
+        <!-- ********************Education**************** -->
+        <section id="education" class="tab-content">
+          <header>My Education</header>
+        </section>
+        <!-- *******************Reference***************** -->
+        <section id="reference" class="tab-content">
+          <header>My Reference</header>d
         </section>
     </main>
     <footer>
@@ -118,11 +151,19 @@
     <!-- secret GitHub token file, which should be gitingore'd, -->
       <!-- therefore recreated in every developer's environment -->
         <script src="js/page.js"></script>
-      <script src="js/githubToken.js"></script>
+      <!-- <script src="js/githubToken.js"></script> -->
     <script src="js/article.js"></script>
     <script src="js/models/repo.js"></script>
+    <script src="js/models/resume.js"></script>
+    <script src="js/models/education.js"></script>
+    <script src="js/models/reference.js"></script>
+    <!-- View -->
     <script src="js/articleView.js"></script>
     <script src="js/views/repoView.js"></script>
+    <script src="js/views/resumeView.js"></script>
+    <script src="js/views/educationView.js"></script>
+    <script src="js/views/referenceView.js"></script>
+    <!-- Controll -->
     <script src="js/controllers/aboutController.js"></script>
     <script src="js/controllers/articleController.js"></script>
     <script src="js/controllers/resumeController.js"></script>
