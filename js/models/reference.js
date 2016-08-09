@@ -6,7 +6,7 @@
   };
   Reference.allreference = [];
   Reference.prototype.toHtml = function(targetId) {
-    var source = (targetId).html();
+    var source = $(targetId).html();
     var template = Handlebars.compile(source);
     return template(this);
   };
@@ -33,7 +33,7 @@
   };
   Reference.getAll = function(nextFunction) {
     $.getJSON('/data/reference.json',function(responseData){
-      reference.loadAll(responseData);
+      Reference.loadAll(responseData);
       localStorage.reference = JSON.stringify(responseData);
       nextFunction();
     });
