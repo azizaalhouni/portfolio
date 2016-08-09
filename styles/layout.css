@@ -17,3 +17,8 @@ div ul li{
     padding: .1em .1em .1em 2em;
     float: none;
   }
+  img {
+    border-radius:30px;
+    margin-left: 220px;
+  }
+}

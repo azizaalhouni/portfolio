@@ -4,6 +4,8 @@
     $('#about').hide();
     $('#articles').hide();
     $('#resume').fadeIn();
+    $('#education').fadeIn();
+    $('#reference').fadeIn();
   };
   module.resumeController = resumeController;
 })(window);

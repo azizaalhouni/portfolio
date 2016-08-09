@@ -4,6 +4,9 @@
 
   articleController.index = function() {
     $('#about').hide();
+    $('#resume').hide();
+    $('#education').hide();
+    $('#reference').hide();
     $('#articles').show();
   };
   module.articleController = articleController;

@@ -17,15 +17,23 @@
     //     next();
     //   }
     // });
-    $.get('/github/users/aizaalhouni/repos' + '?per_page=10&sort=updated')
+    //Jquery call
+    $.get('/github/users/azizaalhouni/repos' )
+    // + '?per_page=10&sort=updated'
     .done(function(data) {
       reposObj.allRepos = data;
     }).done(next);
-
   };
+  // reposObj.withTheAttribute = function(myAttr) {
+  //   return reposObj.allRepos.filter(function(aRepo) {
+  //     return aRepo[myAttr];
+  //   });
+  // };
   reposObj.withTheAttribute = function(myAttr) {
     return reposObj.allRepos.filter(function(aRepo) {
-      return aRepo[myAttr];
+      if(!aRepo.fork) {
+        return aRepo[myAttr];
+      }
     });
   };
   module.reposObj = reposObj;

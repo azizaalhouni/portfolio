@@ -52,7 +52,7 @@
   };
   //call this function if you want to refresh data from the source
   Article.getAll = function(nextFunction){
-    $.getJSON('/data/cv.json', function(responseData){
+    $.getJSON('/data/hackeripsum.json', function(responseData){
       Article.loadAll(responseData);
       localStorage.hackerIpsum = JSON.stringify(responseData);
       nextFunction();
@@ -94,6 +94,6 @@
       };
     });
   };
-
+  
   module.Article = Article;
 })(window);
