@@ -24,11 +24,7 @@
       reposObj.allRepos = data;
     }).done(next);
   };
-  // reposObj.withTheAttribute = function(myAttr) {
-  //   return reposObj.allRepos.filter(function(aRepo) {
-  //     return aRepo[myAttr];
-  //   });
-  // };
+  
   reposObj.withTheAttribute = function(myAttr) {
     return reposObj.allRepos.filter(function(aRepo) {
       if(!aRepo.fork) {
