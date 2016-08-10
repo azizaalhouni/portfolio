@@ -4,7 +4,7 @@
     "author": ["Alison Zerbe", "Aziza Houni", "Derek Hewitt", "Elizabeth Kleinschmidt"],
     "authorUrl": "https://alisonz.github.io/lushootseed/",
     "publishedOn": "2016-07-01",
-    "body": "<p>Lushootseed is the language native to the Puget Sound which was originally spoken in the region that spanned from Olympia to the Skagit watershed and the Hood Canal to the Cascades.  This once thriving language was spoken by a range of tribes that inhabited the area, such as the Duwamish, Tulalip,  Snohomish and Puyallup. The wide territory encompassed by Lushootseed resulted in a Northern Dialect and a Southern Dialect, kind of like Lushootseed accents. While this difference resulted in different pronunciations of certain sounds, the languages were mutually intelligible and speakers easily communicated with each other without losing information.</p>"
+    "body": "<p>Lushootseed is the language native to the Puget Sound which was originally spoken in the region that spanned from Olympia to the Skagit watershed and the Hood Canal to the Cascades. <img src=\"img/lushootseed.png\"> This once thriving language was spoken by a range of tribes that inhabited the area, such as the Duwamish, Tulalip,  Snohomish and Puyallup. The wide territory encompassed by Lushootseed resulted in a Northern Dialect and a Southern Dialect, kind of like Lushootseed accents. While this difference resulted in different pronunciations of certain sounds, the languages were mutually intelligible and speakers easily communicated with each other without losing information.</p>"
   },
   {
     "title": "Makeup",
@@ -12,7 +12,7 @@
     "author":"Aziza Alhouni",
     "authorUrl": "http://azizaalhouni.github.io/bestmakeup/",
     "publishedOn":"2016-05-30",
-    "body":"Through this website you can know the last products with reviews and you can make your own list"
+    "body":"Through this website you can know the last products with reviews and you can make your own list <img src=\"img/makeup.png\">"
   },
   {
   "title": "Eve Online!",
@@ -20,6 +20,6 @@
   "author":["Aziza Houni", "Derek Hewitt", "Elizabeth Kleinschmidt","Logan"],
   "authorUrl":"https://eve-yamt.firebaseapp.com/",
   "publishedOn":"2016-08-05",
-  "body": "EVE Online is a massively multiplayer online role playing game set in the distant future.  Players of the game take on the role of immortal pod pilots, using fantastic technology developed by the Jovians.  You take on the role of a ship in space, with many different capabilities available to you by fitting different modules to your ship.</p><p>The story of EVE is really its future, which is written by the players of the game.  This video does a good job of showcasing the skill and tenacity of EVE’s pod pilots:</p>"
+  "body": "EVE Online is a massively multiplayer online role playing game set in the distant future. <img src=\"img/eve.png\"> Players of the game take on the role of immortal pod pilots, using fantastic technology developed by the Jovians.  You take on the role of a ship in space, with many different capabilities available to you by fitting different modules to your ship.</p><p>The story of EVE is really its future, which is written by the players of the game.  This video does a good job of showcasing the skill and tenacity of EVE’s pod pilots:</p>"
 }
 ]
