@@ -4,7 +4,7 @@ var express = require('express'),
 //proxy give us an autorizition to use github so proxy will call process.env
   requestProxy = require('express-request-proxy'),
   //process.env just define in the server
-  port = process.env.PORT || 3000,
+  port = process.env.PORT || 4000,
   app = express();
   //heroku Now use our proxy within a function to request
   //our github data on the Server.
