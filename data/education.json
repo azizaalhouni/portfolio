@@ -1,15 +1,21 @@
-[{
+[
+  {
+    "title":"Web Developer Certificate",
+    "location":"codefellows, Seattle, WA",
+    "date":"2016"
+  },
+  {
   "title":"IPPM Diploma",
   "location":"Tassili International Center, Tripoli, Libya",
   "date":" 2015 "
 },
 {
-  "title":"Payable Clerk certificate",
+  "title":"Payable Clerk Certificate",
   "location":"shoreline community college, Seattle, Washington",
   "date":"2014"
 },
 {
-  "title":"Microsoft Data Base certificate,",
+  "title":"Microsoft Data Base Certificate,",
   "location":"Microsoft Academy, Tripoli, Libya",
   "date":"2009"
 },
