@@ -34,7 +34,7 @@
       //eTag
       $.ajax({
         type: 'HEAD',
-        url: '/data/hackerIpsum.json',
+        url: '../data/hackerIpsum.json',
         success: function(data, message, xhr) {
           var eTag = xhr.getResponseHeader('eTag');
           if(!localStorage.eTag || eTag !== localStorage.eTag) {
@@ -52,7 +52,7 @@
   };
   //call this function if you want to refresh data from the source
   Article.getAll = function(nextFunction){
-    $.getJSON('/data/hackeripsum.json', function(responseData){
+    $.getJSON('../data/hackeripsum.json', function(responseData){
       Article.loadAll(responseData);
       localStorage.hackerIpsum = JSON.stringify(responseData);
       nextFunction();
@@ -94,6 +94,6 @@
       };
     });
   };
-  
+
   module.Article = Article;
 })(window);
