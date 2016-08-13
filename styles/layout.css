@@ -11,7 +11,7 @@ div ul li{
   color:white;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 970px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
